@@ -4,7 +4,7 @@ const db = mysql({
   config: {
     host: '127.0.0.1',
     port: '3306',
-    database: 'nextjs1',
+    database: 'nextjs_simpleapp',
     user: 'root',
     password: '',
   },

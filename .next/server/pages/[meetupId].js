@@ -107,7 +107,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _MeetupDetail_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./MeetupDetail.module.css */ "./components/meetups/MeetupDetail.module.css");
 /* harmony import */ var _MeetupDetail_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_MeetupDetail_module_css__WEBPACK_IMPORTED_MODULE_1__);
 
-var _jsxFileName = "D:\\Dok Rama\\course\\ReactJs\\nuxtjs\\starting-project\\components\\meetups\\MeetupDetail.js";
+var _jsxFileName = "E:\\Rama\\Source\\react\\nextjs\\nextjs-simple-app\\components\\meetups\\MeetupDetail.js";
 
 
 function MeetupDetail(props) {
@@ -180,7 +180,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_meetups_MeetupDetail__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/meetups/MeetupDetail */ "./components/meetups/MeetupDetail.js");
 
-var _jsxFileName = "D:\\Dok Rama\\course\\ReactJs\\nuxtjs\\starting-project\\pages\\[meetupId]\\index.js";
+var _jsxFileName = "E:\\Rama\\Source\\react\\nextjs\\nextjs-simple-app\\pages\\[meetupId]\\index.js";
 
 
 function MeetupDetails(props) {
