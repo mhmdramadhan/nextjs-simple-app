@@ -1,24 +1,5 @@
-import { useEffect, useState } from 'react';
-import MeetupList from '../components/meetups/MeetupList';
-
-const DUMMY_MEETUPS = [
-  {
-    id: 'm1',
-    title: 'A First Meetup',
-    image:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png',
-    address: 'Some Address 5, 12345 Some City',
-    description: 'This is our first meetup',
-  },
-  {
-    id: 'm2',
-    title: 'A Second Meetup',
-    image:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png',
-    address: 'Some Address 10, 12345 Some City',
-    description: 'This is our second meetup',
-  },
-];
+import executeQuery from "./api/lib/db";
+import MeetupList from "../components/meetups/MeetupList";
 
 function HomePage(props) {
   return <MeetupList meetups={props.meetups} />;
@@ -39,12 +20,23 @@ function HomePage(props) {
 
 export async function getStaticProps() {
   // fetch data from api
+  const result = await executeQuery({
+    query: "SELECT * FROM meetups",
+    values: [],
+  });
+  const meetups = await result;
 
   return {
     props: {
-      meetups: DUMMY_MEETUPS,
+      meetups: meetups.map((meetup) => ({
+        title: meetup.title,
+        address: meetup.address,
+        image: meetup.image,
+        description: meetup.description,
+        id: meetup.id,
+      })),
     },
-    revalidate: 10
+    revalidate: 10,
   };
 }
 
