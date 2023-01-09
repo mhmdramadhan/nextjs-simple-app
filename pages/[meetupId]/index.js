@@ -1,31 +1,29 @@
+import executeQuery from '../api/lib/db';
 import MeetupDetail from '../../components/meetups/MeetupDetail';
 
 function MeetupDetails(props) {
   return (
     <MeetupDetail
-      image='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png'
-      title="test"
-      address="lorem asda asdasd"
-      description="asdasdasd asdasd asd"
+      image={props.meetupData.image}
+      title={props.meetupData.title}
+      address={props.meetupData.address}
+      description={props.meetupData.description}
     />
   );
 }
 
 export async function getStaticPaths() {
+  const result = await executeQuery({
+    query: 'SELECT * FROM meetups',
+    values: [],
+  });
+  const meetups = await result;
+
   return {
     fallback: false,
-    paths: [
-      {
-        params: {
-          meetupId: "m1",
-        }
-      },
-      {
-        params: {
-          meetupId: "m2",
-        }
-      },
-    ],
+    paths: meetups.map((meetup) => ({
+      params: { meetupId: meetup.id.toString() },
+    })),
   };
 }
 
@@ -33,16 +31,23 @@ export async function getStaticProps(contex) {
   // fetch data for a single meetups
 
   const meetupId = contex.params.meetupId;
-  console.log(meetupId);
+
+  const result = await executeQuery({
+    query: 'SELECT * FROM meetups WHERE id = ?',
+    values: [meetupId],
+  });
+  const selectedMeetup = await result[0];
+  
+  console.log(selectedMeetup.address)
 
   return {
     props: {
       meetupData: {
-        image:
-          'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png',
-        title: 'First Meetup',
-        address: 'Some Street 5, Some city',
-        description: 'The First Meetups here',
+        id: selectedMeetup.id,
+        title: selectedMeetup.title,
+        address: selectedMeetup.address,
+        image: selectedMeetup.image,
+        description: selectedMeetup.description,
       },
     },
   };
