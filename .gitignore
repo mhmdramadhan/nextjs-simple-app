@@ -1,25 +1,50 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # rama
-/.next
+/1.NextSimpleApp/.next
 # dependencies
-/node_modules
-/.pnp
-.pnp.js
+/1.NextSimpleApp/node_modules
+/1.NextSimpleApp/.pnp
+/1.NextSimpleApp/.pnp.js
 
 # testing
-/coverage
+/1.NextSimpleApp/coverage
 
 # production
-/build
+/1.NextSimpleApp/build
 
 # misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+/1.NextSimpleApp/.DS_Store
+/1.NextSimpleApp/.env.local
+/1.NextSimpleApp/.env.development.local
+/1.NextSimpleApp/.env.test.local
+/1.NextSimpleApp/.env.production.local
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+/1.NextSimpleApp/npm-debug.log*
+/1.NextSimpleApp/yarn-debug.log*
+/1.NextSimpleApp/yarn-error.log*
+
+
+# rama
+/2.LearningNext/.next
+# dependencies
+/2.LearningNext/node_modules
+/2.LearningNext/.pnp
+/2.LearningNext/.pnp.js
+
+# testing
+/2.LearningNext/coverage
+
+# production
+/2.LearningNext/build
+
+# misc
+/2.LearningNext/.DS_Store
+/2.LearningNext/.env.local
+/2.LearningNext/.env.development.local
+/2.LearningNext/.env.test.local
+/2.LearningNext/.env.production.local
+
+/2.LearningNext/npm-debug.log*
+/2.LearningNext/yarn-debug.log*
+/2.LearningNext/yarn-error.log*
