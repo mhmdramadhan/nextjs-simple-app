@@ -48,3 +48,27 @@
 /2.LearningNext/npm-debug.log*
 /2.LearningNext/yarn-debug.log*
 /2.LearningNext/yarn-error.log*
+
+# rama
+/3.TestingReactApp/.next
+# dependencies
+/3.TestingReactApp/node_modules
+/3.TestingReactApp/.pnp
+/3.TestingReactApp/.pnp.js
+
+# testing
+/3.TestingReactApp/coverage
+
+# production
+/3.TestingReactApp/build
+
+# misc
+/3.TestingReactApp/.DS_Store
+/3.TestingReactApp/.env.local
+/3.TestingReactApp/.env.development.local
+/3.TestingReactApp/.env.test.local
+/3.TestingReactApp/.env.production.local
+
+/3.TestingReactApp/npm-debug.log*
+/3.TestingReactApp/yarn-debug.log*
+/3.TestingReactApp/yarn-error.log*
