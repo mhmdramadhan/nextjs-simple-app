@@ -1,0 +1,5 @@
+# Cara Install Typescript
+npm install typescript
+
+# Jalankan typescript
+npx tsc namaFileYangMauDiRunning
