@@ -97,3 +97,28 @@
 /4.Typescript/npm-debug.log*
 /4.Typescript/yarn-debug.log*
 /4.Typescript/yarn-error.log*
+
+
+# rama
+/5.reacttypescript1/.next
+# dependencies
+/5.reacttypescript1/node_modules
+/5.reacttypescript1/.pnp
+/5.reacttypescript1/.pnp.js
+
+# testing
+/5.reacttypescript1/coverage
+
+# production
+/5.reacttypescript1/build
+
+# misc
+/5.reacttypescript1/.DS_Store
+/5.reacttypescript1/.env.local
+/5.reacttypescript1/.env.development.local
+/5.reacttypescript1/.env.test.local
+/5.reacttypescript1/.env.production.local
+
+/5.reacttypescript1/npm-debug.log*
+/5.reacttypescript1/yarn-debug.log*
+/5.reacttypescript1/yarn-error.log*
