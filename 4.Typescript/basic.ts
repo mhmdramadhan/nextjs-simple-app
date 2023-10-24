@@ -16,10 +16,12 @@ isInsturctor = true;
 let hobbies: string[];
 hobbies = ['hai', 'hello', 'world'];
 
-let person: {
+type Person = {
   name: string;
   age: number;
 };
+
+let person: Person;
 
 person = {
   name: 'rama',
@@ -30,10 +32,9 @@ person = {
 //   isEmployee: true,
 // };
 
-let people: {
-  name: string;
-  age: number;
-}[];
+let people: Person[];
 
-// Type inference
-let course = 'React the complete guide';
+// Type inference (union type)
+let course: string | number = 'React the complete guide';
+
+course = 1234;
