@@ -6,6 +6,7 @@ import { useState } from 'react';
 
 function App() {
   const [todos, setTodos] = useState<Todo[]>([]);
+  const [todo, setTodo] = useState<Todo[]>([]);
 
   const addTodoHandler = (todoText: string) => {
     // inialisasi todo baru
@@ -17,10 +18,41 @@ function App() {
     });
   };
 
+  const editTodoHandler = (todoText: string) => {
+    const id = todo[0].id;
+
+    const newTodos = todos.map((item) => {
+      if (item.id === id) {
+        return { ...item, text: todoText };
+      }
+
+      return item;
+    });
+
+    setTodos(newTodos);
+    setTodo([]);
+  };
+
+  const onDeleteHandler = (id: string) => {
+    setTodos(todos.filter((item) => item.id !== id));
+  };
+
+  const onEditHandler = (id: string) => {
+    setTodo(todos.filter((item) => item.id === id));
+  };
+
   return (
     <div>
-      <NewTodo onAddTodo={addTodoHandler} />
-      <Todos items={todos} />
+      <NewTodo
+        onAddTodo={addTodoHandler}
+        onEditTodo={editTodoHandler}
+        isUpdate={todo}
+      />
+      <Todos
+        onDeleteTodo={onDeleteHandler}
+        items={todos}
+        onEditTodo={onEditHandler}
+      />
     </div>
   );
 }
