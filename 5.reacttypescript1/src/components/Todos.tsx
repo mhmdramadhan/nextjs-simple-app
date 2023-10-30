@@ -2,6 +2,7 @@ import React from 'react';
 
 import Todo from '../models/todo';
 import TodoItem from './Todo';
+import classes from './Todos.module.css';
 
 const Todos: React.FC<{
   items: Todo[];
@@ -13,7 +14,7 @@ const Todos: React.FC<{
   };
 
   return (
-    <ul>
+    <ul className={classes.todos}>
       {props.items.map((item) => (
         <TodoItem
           key={item.id}

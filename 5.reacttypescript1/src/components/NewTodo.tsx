@@ -1,6 +1,7 @@
 import React from 'react';
 import { useRef } from 'react';
 import Todo from '../models/todo';
+import clasess from './NewTodo.module.css'
 
 const NewTodo: React.FC<{
   onAddTodo: (text: string) => void;
@@ -28,7 +29,7 @@ const NewTodo: React.FC<{
   };
 
   return (
-    <form onSubmit={submitHandler}>
+    <form onSubmit={submitHandler} className={clasess.form}>
       <label htmlFor="text">Todo Text</label>
       <input type="text" id="text" ref={todoTextInputRef} />
       <button>{!isUpdated ? 'Simpan' : 'Update'}</button>

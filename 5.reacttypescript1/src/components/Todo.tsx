@@ -1,5 +1,6 @@
 import React from 'react';
 import TodoItem from '../models/todo';
+import clasess from './Todo.module.css'
 
 const Todo: React.FC<{
   todo: TodoItem;
@@ -11,10 +12,10 @@ const Todo: React.FC<{
   };
 
   return (
-    <li key={props.todo.id}>
+    <li key={props.todo.id} className={clasess.item}>
       {props.todo.text}
-      <button onClick={() => props.onEditTodo(props.todo.id)}>Edit</button>
-      <button onClick={() => onDeleteHandler(props.todo.id)}>Hapus</button>
+      <button className={clasess.btnPrime} onClick={() => props.onEditTodo(props.todo.id)}>Edit</button>
+      <button className={clasess.btnDanger} onClick={() => onDeleteHandler(props.todo.id)}>Hapus</button>
     </li>
   );
 };
