@@ -1,15 +1,14 @@
-import React from 'react';
-import { useRef } from 'react';
-import Todo from '../models/todo';
-import clasess from './NewTodo.module.css'
+import React, { useContext } from 'react';
 
-const NewTodo: React.FC<{
-  onAddTodo: (text: string) => void;
-  onEditTodo: (text: string) => void;
-  isUpdate: Todo[];
-}> = (props) => {
+import { TodosContext } from '../store/todos-context';
+import { useRef } from 'react';
+import clasess from './NewTodo.module.css';
+
+const NewTodo: React.FC = (props) => {
+  const todosCtx = useContext(TodosContext);
+
   const todoTextInputRef = useRef<HTMLInputElement>(null);
-  const isUpdated = props.isUpdate.length === 0 ? false : true;
+  const isUpdated = todosCtx.item.length === 0 ? false : true;
 
   const submitHandler = (event: React.FormEvent) => {
     event.preventDefault();
@@ -22,9 +21,9 @@ const NewTodo: React.FC<{
     }
 
     if (!isUpdated) {
-      props.onAddTodo(enteredText);
+      todosCtx.addTodo(enteredText);
     } else {
-      props.onEditTodo(enteredText);
+      todosCtx.editTodo(enteredText);
     }
   };
 
