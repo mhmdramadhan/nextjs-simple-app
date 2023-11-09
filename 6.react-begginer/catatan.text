@@ -3,3 +3,6 @@ Install react menggunakan vite
 - cd /folder
 - npm Install
 - npm run dev
+
+css module
+https://github.com/css-modules/css-modules
