@@ -122,3 +122,27 @@
 /5.reacttypescript1/npm-debug.log*
 /5.reacttypescript1/yarn-debug.log*
 /5.reacttypescript1/yarn-error.log*
+
+# rama
+/6.react-begginer/1-react-crash-course/.next
+# dependencies
+/6.react-begginer/1-react-crash-course/node_modules
+/6.react-begginer/1-react-crash-course/.pnp
+/6.react-begginer/1-react-crash-course/.pnp.js
+
+# testing
+/6.react-begginer/1-react-crash-course/coverage
+
+# production
+/6.react-begginer/1-react-crash-course/build
+
+# misc
+/6.react-begginer/1-react-crash-course/.DS_Store
+/6.react-begginer/1-react-crash-course/.env.local
+/6.react-begginer/1-react-crash-course/.env.development.local
+/6.react-begginer/1-react-crash-course/.env.test.local
+/6.react-begginer/1-react-crash-course/.env.production.local
+
+/6.react-begginer/1-react-crash-course/npm-debug.log*
+/6.react-begginer/1-react-crash-course/yarn-debug.log*
+/6.react-begginer/1-react-crash-course/yarn-error.log*

@@ -1,0 +1,5 @@
+Install react menggunakan vite
+- npm create vite
+- cd /folder
+- npm Install
+- npm run dev
