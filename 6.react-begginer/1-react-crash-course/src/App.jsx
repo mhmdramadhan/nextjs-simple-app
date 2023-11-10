@@ -1,9 +1,10 @@
 import Post from './components/Post';
+import PostList from './components/PostList';
 
 function App() {
   return (
     <>
-      <Post author="Rama" body="INI KONTEN RAMA" />
+      <PostList />
     </>
   );
 }
