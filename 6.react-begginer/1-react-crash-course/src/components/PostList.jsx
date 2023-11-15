@@ -5,9 +5,23 @@ import Modal from './Modal';
 import { useState } from 'react';
 
 const PostList = (props) => {
+  fetch('http://localhost:8080/posts').then((response) => {
+    return response.json()
+  }).then(data => {
+    setPosts(data.posts)
+  });
+
   const [posts, setPosts] = useState([]);
 
   const addPostHandler = (postData) => {
+    fetch('http://localhost:8080/posts', {
+      method: 'POST',
+      body: JSON.stringify(postData),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+
     setPosts((existingPost) => [postData, ...existingPost]);
   };
 
