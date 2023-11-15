@@ -146,3 +146,26 @@
 /6.react-begginer/1-react-crash-course/npm-debug.log*
 /6.react-begginer/1-react-crash-course/yarn-debug.log*
 /6.react-begginer/1-react-crash-course/yarn-error.log*
+
+/6.react-begginer/backend-crash-course/.next
+# dependencies
+/6.react-begginer/backend-crash-course/node_modules
+/6.react-begginer/backend-crash-course/.pnp
+/6.react-begginer/backend-crash-course/.pnp.js
+
+# testing
+/6.react-begginer/backend-crash-course/coverage
+
+# production
+/6.react-begginer/backend-crash-course/build
+
+# misc
+/6.react-begginer/backend-crash-course/.DS_Store
+/6.react-begginer/backend-crash-course/.env.local
+/6.react-begginer/backend-crash-course/.env.development.local
+/6.react-begginer/backend-crash-course/.env.test.local
+/6.react-begginer/backend-crash-course/.env.production.local
+
+/6.react-begginer/backend-crash-course/npm-debug.log*
+/6.react-begginer/backend-crash-course/yarn-debug.log*
+/6.react-begginer/backend-crash-course/yarn-error.log*

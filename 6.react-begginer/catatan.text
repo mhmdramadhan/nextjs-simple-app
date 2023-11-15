@@ -7,3 +7,10 @@ Install react menggunakan vite
 css module
 https://github.com/css-modules/css-modules
 
+icon
+npm install react-icons
+
+run backend
+npm install
+npm start
+
