@@ -169,3 +169,27 @@
 /6.react-begginer/backend-crash-course/npm-debug.log*
 /6.react-begginer/backend-crash-course/yarn-debug.log*
 /6.react-begginer/backend-crash-course/yarn-error.log*
+
+# rama
+/7.kominfo-react/kominfo/.next
+# dependencies
+/7.kominfo-react/kominfo/node_modules
+/7.kominfo-react/kominfo/.pnp
+/7.kominfo-react/kominfo/.pnp.js
+
+# testing
+/7.kominfo-react/kominfo/coverage
+
+# production
+/7.kominfo-react/kominfo/build
+
+# misc
+/7.kominfo-react/kominfo/.DS_Store
+/7.kominfo-react/kominfo/.env.local
+/7.kominfo-react/kominfo/.env.development.local
+/7.kominfo-react/kominfo/.env.test.local
+/7.kominfo-react/kominfo/.env.production.local
+
+/7.kominfo-react/kominfo/npm-debug.log*
+/7.kominfo-react/kominfo/yarn-debug.log*
+/7.kominfo-react/kominfo/yarn-error.log*

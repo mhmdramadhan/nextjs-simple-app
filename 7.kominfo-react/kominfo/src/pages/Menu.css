@@ -1,0 +1,52 @@
+.modal-dialog {
+    opacity: 0.8;
+    /* background: blue; */
+    /* background: rgba(255, 255, 255, 0.133); */
+    /* background-color: rgba(255, 255, 255, 0.122); */
+    border: none;
+}
+
+.d-flex a:hover {
+    font-weight: 900;
+}
+
+.modal-body {
+    background-color: rgba(255, 255, 255, 0.122) !important;
+}
+
+#mains {
+    display: flex;
+    justify-content: center;
+}
+
+.category-block-one .inner-box:before {
+    background-color: #223a66 !important;
+}
+
+::shadow {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75) !important;
+}
+
+
+.theme-btn-one {
+    background-color: #223a66 !important;
+    box-shadow: 0px 0px 10px 0px #223a66 !important;
+}
+
+.category-block-one .inner-box:hover {
+    box-shadow: 0px 0px 10px 0px rgba(36, 36, 36, 0.75) !important;
+}
+
+body {
+    background: url("../assets/images/desain1.jpg") no-repeat center center fixed !important;
+    /* background-size: 2000px 1280px !important; */
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+
+    /* background-size: cover !important;
+                                                            background-repeat: no-repeat !important; */
+    /* background-position: center top !important; */
+    /* background-attachment: fixed !important; */
+}
