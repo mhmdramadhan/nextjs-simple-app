@@ -1,28 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-// css
-import './assets/css/animate.css';
-import './assets/css/bootstrap.css';
-import './assets/css/color.css';
-import './assets/css/flaticon.css';
-import './assets/css/font-awesome-all.css';
-import './assets/css/jquery.fancybox.min.css';
-import './assets/css/nice-select.css';
-import './assets/css/owl.css';
-import './assets/css/responsive.css';
-import './assets/css/rtl.css';
-import './assets/css/style.css';
-// end css
-
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Menu from './pages/Menu';
 import { Layanan } from './pages/Layanan';
+import Beranda, {loader as loaderBeranda} from './pages/Beranda';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Menu />,
+  },
+  {
+    path: '/beranda',
+    element: <Beranda />,
+    loader: loaderBeranda
   },
   {
     path: '/layanan-tte',

@@ -10,7 +10,21 @@ import {
   faUserGroup,
 } from '@fortawesome/free-solid-svg-icons';
 
+// css
+import '../assets/css/animate.css';
+import '../assets/css/bootstrap.css';
+import '../assets/css/color.css';
+import '../assets/css/flaticon.css';
+import '../assets/css/font-awesome-all.css';
+import '../assets/css/jquery.fancybox.min.css';
+import '../assets/css/nice-select.css';
+import '../assets/css/owl.css';
+import '../assets/css/responsive.css';
+import '../assets/css/rtl.css';
+import '../assets/css/style.css';
 import './Menu.css';
+// end css
+
 import background1 from '../assets/images/shape/shape-1.png';
 import background2 from '../assets/images/shape/shape-2.png';
 import { useState } from 'react';
@@ -124,6 +138,14 @@ const Menu = () => {
               </Link>
             </div>
           </div>
+          <div className="collapse row mt-2 mb-4" id="collapseExample">
+            <div className="card card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life
+              accusamus terry richardson ad squid. Nihil anim keffiyeh
+              helvetica, craft beer labore wes anderson cred nesciunt sapiente
+              ea proident.
+            </div>
+          </div>
           <div className="row d-flex align-items-center justify-content-center">
             <div
               className="category-block-one wow fadeInDown animated animated"
@@ -219,6 +241,13 @@ const Menu = () => {
                   </div>
                   <h5>KONTAK KAMI</h5>
                 </div>
+              </Link>
+            </div>
+          </div>
+          <div className="col-md-12" id="mains">
+            <div className="more-btn">
+              <Link to="/beranda" className="theme-btn-one">
+                Tampilan Penuh
               </Link>
             </div>
           </div>

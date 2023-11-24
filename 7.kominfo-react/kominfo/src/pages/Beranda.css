@@ -1,0 +1,12 @@
+body {
+    background: none !important;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    color: transparent;
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
