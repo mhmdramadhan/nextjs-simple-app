@@ -10,3 +10,124 @@ body {
     outline: none;
     box-shadow: none;
 }
+
+.posts-slide {
+    background: #fff;
+    margin: 20px 15px 20px;
+    /* border-radius: 15px; */
+    padding-top: 1px;
+    box-shadow: 0px 14px 22px -9px #bbcbd8;
+    height: 600px;
+}
+
+.posts-slide .posts-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: -12px 15px 8px 15px;
+    margin-left: -10px;
+}
+
+.posts-slide .posts-img img {
+    width: 100%;
+    height: 300px;
+    transform: scale(1, 1);
+    transition: transform 0.2s linear;
+}
+
+.posts-slide:hover .posts-img img {
+    transform: scale(1.1, 1.1);
+}
+
+.posts-slide .over-layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background: linear-gradient(-45deg, rgba(6, 190, 244, 0.75) 0%, rgba(45, 112, 253, 0.6) 100%);
+    transition: all 0.50s linear;
+}
+
+.posts-slide:hover .over-layer {
+    opacity: 1;
+    text-decoration: none;
+}
+
+.posts-slide .over-layer i {
+    position: relative;
+    top: 45%;
+    text-align: center;
+    display: block;
+    color: #fff;
+    font-size: 25px;
+}
+
+.posts-slide .posts-content {
+    background: #fff;
+    padding: 2px 20px 40px;
+    border-radius: 15px;
+}
+
+.posts-slide .posts-title a {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+
+.posts-slide .posts-title a:hover {
+    text-decoration: none;
+    color: #3498db;
+}
+
+.posts-slide .posts-description {
+    line-height: 24px;
+    color: #808080;
+    margin-bottom: 25px;
+    /* position bottom */
+}
+
+.posts-slide .posts-date {
+    color: #a9a9a9;
+    font-size: 14px;
+
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.posts-slide .posts-date i {
+    font-size: 20px;
+    margin-right: 8px;
+    color: #CFDACE;
+}
+
+.posts-slide .read-more {
+    padding: 7px 20px;
+    float: right;
+    font-size: 12px;
+    background: #223a66;
+    color: #ffffff;
+    box-shadow: 0px 10px 20px -10px #1376c5;
+    border-radius: 25px;
+    /* text-transform: uppercase; */
+
+}
+
+.posts-slide .read-more:hover {
+    background: #3498db;
+    text-decoration: none;
+    color: #fff;
+}
+
+@media only screen and (max-width:1280px) {
+    .posts-slide .posts-content {
+        padding: 0px 15px 25px 15px;
+    }
+}
