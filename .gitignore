@@ -1,6 +1,30 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # rama
+/0.First-react/.next
+# dependencies
+/0.First-react/node_modules
+/0.First-react/.pnp
+/0.First-react/.pnp.js
+
+# testing
+/0.First-react/coverage
+
+# production
+/0.First-react/build
+
+# misc
+/0.First-react/.DS_Store
+/0.First-react/.env.local
+/0.First-react/.env.development.local
+/0.First-react/.env.test.local
+/0.First-react/.env.production.local
+
+/0.First-react/npm-debug.log*
+/0.First-react/yarn-debug.log*
+/0.First-react/yarn-error.log*
+
+# rama
 /1.NextSimpleApp/.next
 # dependencies
 /1.NextSimpleApp/node_modules
