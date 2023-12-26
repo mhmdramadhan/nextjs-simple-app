@@ -1,23 +1,23 @@
+import Button from "./components/Button";
+import Card from "./components/Card";
+
 function App() {
   return (
-    <div className="bg-slate-900 grid place-content-center min-h-screen">
-      <div className={"flex gap-x-2"}>
-        <Button type="submit" className="bg-blue-600">
-          Register
-        </Button>
-        <Button type="button" className="bg-pink-600">
-          Login
-        </Button>
+    <div className="bg-slate-100 antialiased flex items-center justify-center min-h-screen">
+      <div className="max-w-md w-full">
+        <Card>
+          <Card.Title>Hello World</Card.Title>
+          <Card.Body>
+            lorem das asd dasddasdasdsadsa dasdasd dasd
+            adasdasdasdasdsdsadwddasd asdasd asdadawdawddwdasd asdasda sdasd sad
+            s ds dsdsad awd awda dw daw d asda sd a sd sdasdasdasdasda d
+          </Card.Body>
+          <Card.Footer>
+            <Button>Register</Button>
+          </Card.Footer>
+        </Card>
       </div>
     </div>
-  );
-}
-
-function Button({ children, type, className }) {
-  return (
-    <button type={type} className={`${className} text-white px-4 py-2 rounded`}>
-      {children}
-    </button>
   );
 }
 
