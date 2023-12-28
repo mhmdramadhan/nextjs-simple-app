@@ -10,7 +10,7 @@ function Title({ children }) {
   );
 }
 function Body({ children }) {
-  return <div className="leading-relaxed p-4">{children}</div>;
+  return <div className="leading-relaxed p-4 text-black">{children}</div>;
 }
 
 function Footer({ children }) {

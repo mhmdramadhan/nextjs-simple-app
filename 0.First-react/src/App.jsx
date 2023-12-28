@@ -1,26 +1,23 @@
 import PlaceContentCenter from "./components/PlaceContentCenter";
-import Counter from "./components/Counter";
+import Card from "./components/Card";
+import Button from "./components/Button";
 
 function App() {
   return (
     <PlaceContentCenter>
-      <Counter initialValue={10} />
+      <Card>
+        <Card.Title>Sign for new account</Card.Title>
+        <Card.Body>
+          <div className="mb-6">
+            <label htmlFor="name">Name</label>
+            <input type="text" name="name" id="name" />
+          </div>
+        </Card.Body>
+        <Card.Footer>
+          <Button className="bg-black">Register</Button>
+        </Card.Footer>
+      </Card>
     </PlaceContentCenter>
-    // <div className="bg-slate-100 antialiased flex items-center justify-center min-h-screen">
-    //   <div className="max-w-md w-full">
-    //     <Card>
-    //       <Card.Title>Hello World</Card.Title>
-    //       <Card.Body>
-    //         lorem das asd dasddasdasdsadsa dasdasd dasd
-    //         adasdasdasdasdsdsadwddasd asdasd asdadawdawddwdasd asdasda sdasd sad
-    //         s ds dsdsad awd awda dw daw d asda sd a sd sdasdasdasdasda d
-    //       </Card.Body>
-    //       <Card.Footer>
-    //         <Button>Register</Button>
-    //       </Card.Footer>
-    //     </Card>
-    //   </div>
-    // </div>
   );
 }
 
