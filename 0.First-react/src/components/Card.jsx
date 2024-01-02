@@ -4,7 +4,7 @@ const Card = ({ children }) => {
 
 function Title({ children }) {
   return (
-    <div className="p-4 border-b">
+    <div className="p-4 border-b text-black">
       <h1 className="text-xl">{children}</h1>
     </div>
   );
