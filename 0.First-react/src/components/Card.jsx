@@ -14,7 +14,7 @@ function Body({ children }) {
 }
 
 function Footer({ children }) {
-  return <div className="bg-slate-50 p-4">{children}</div>;
+  return <div className="bg-slate-50 p-4 text-black">{children}</div>;
 }
 
 Card.Title = Title;

@@ -1,25 +1,23 @@
 import PlaceContentCenter from './components/PlaceContentCenter';
-import Card from './components/Card';
-import Button from './components/Button';
-import Input from './components/Input';
-import { Label } from './components/Label';
-import { useState } from 'react';
+import Todo from './components/Todo';
 
 function App() {
-  const [form, setForm] = useState({
-    name: '',
-    email: '',
-  });
+  // const [form, setForm] = useState({
+  //   name: '',
+  //   email: '',
+  // });
 
-  const formExec = (e) => {
-    e.preventDefault();
+  // const formExec = (e) => {
+  //   e.preventDefault();
 
-    console.log(form);
-  };
+  //   console.log(form);
+  // };
 
   return (
     <PlaceContentCenter>
-      <form onSubmit={formExec}>
+      <Todo />
+
+      {/* <form onSubmit={formExec}>
         <Card>
           <Card.Title>Sign for new account</Card.Title>
           <Card.Body>
@@ -55,7 +53,7 @@ function App() {
             <Button className="bg-black">Register</Button>
           </Card.Footer>
         </Card>
-      </form>
+      </form> */}
     </PlaceContentCenter>
   );
 }
