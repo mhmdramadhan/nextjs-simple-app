@@ -18,7 +18,26 @@ const Todo = () => {
         completed: false,
       },
     ]);
+
+    setNewTask('');
   };
+
+  const handleCompleteTask = (id) => {
+    const updateTask = tasks.map((task) => {
+      if (id === task.id) {
+        return {
+          ...task,
+          completed: true,
+        };
+      }
+
+      return task;
+    });
+
+    setTasks(updateTask);
+  };
+
+  const handleRemoveTask = (id) => {};
 
   return (
     <Card>
@@ -34,9 +53,27 @@ const Todo = () => {
           </div>
         </form>
         {tasks.length > 0 && (
-          <ol className="space-y-2">
+          <ol className="space-y-2 mt-4">
             {tasks.map((data, key) => (
-              <li key={key}>{data}</li>
+              <li key={data.id} className="flex items-center justify-between">
+                <span>
+                  {data.name} {data.completed ? 'Completed' : 'Incompleted'}
+                </span>
+                <div className="flex items-center gap-x-2">
+                  <button
+                    onClick={() => handleCompleteTask(data.id)}
+                    className="px-2 py-1 border text-xs"
+                  >
+                    complete
+                  </button>
+                  <button
+                    onClick={() => handleRemoveTask(data.id)}
+                    className="px-2 py-1 border text-xs"
+                  >
+                    remove
+                  </button>
+                </div>
+              </li>
             ))}
           </ol>
         )}
